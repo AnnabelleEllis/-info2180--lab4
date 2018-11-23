@@ -58,6 +58,14 @@ window.onload = function(){
 		gameStart(display);
 		changeRed(topLeft, display,start);
 		gameEnd(display);
+	}else if(start){
+		for (var x = 0; x < topLeft.length; x++) {
+			//This feel wrong
+				if (topLeft[x].classList.contains("youlose")){
+					topLeft[x].classList.remove("youlose");
+				}
+
+		}			
 	}
 
 
